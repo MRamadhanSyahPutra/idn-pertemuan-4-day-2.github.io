@@ -1,0 +1,104 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Variabel */
+:root {
+  --primary-color: #54b4d3;
+  --dark-color: #0f0f0f;
+  --grey-color: grey;
+
+  --h1-font-size: 40px;
+  --h2-font-size: 32px;
+  --small-font-size: 14px;
+}
+
+/* Reset Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Global css */
+section {
+  padding: 70px 0;
+}
+
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-orange {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.fs-7 {
+  font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* Section Style */
+/* navbar style */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+  color: var(--primary-color);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-item .nav-link {
+  color: var(--dark-color);
+}
+
+/* header style */
+.header-section .header-title {
+  font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill {
+  color: var(--dark-color);
+}
+
+.header-section .header-skill:hover {
+  color: var(--primary-color);
+}
+
+.header-section .header-img,
+.skills-section .skills-img {
+  width: 90%;
+}
+
+/* portfolio style */
+.portfolio-section .card .card-img-top {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width : 768px) {
+  .portfolio-section .card .card-img-top {
+    height: 100px;
+  }
+}
+
+.typed-cursor-blue {
+  color: #54b4d3;
+}
